@@ -1,9 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Dashboard = () => {
+    const navigate = useNavigate();
+
     const id = "22B01A1230";
     const name = "Akshaya";
-    
+
+    const handleStudents=()=>{
+        navigate('/StudentsNavigation');
+    }
+
     return (
         <div>
             <div className="bg-blue-500 rounded-lg p-6 w-100 flex flex-col items-start mt-10 ml-5 mr-5">
@@ -16,7 +23,7 @@ const Dashboard = () => {
                     <button className="w-full px-8 py-4 text-xl">Offers</button>
                 </div>
                 <div className="w-full sm:w-1/2 md:w-1/3 text-white bg-blue-500 rounded py-3">
-                    <button className="w-full px-8 py-4 text-xl">Students</button>
+                    <button className="w-full px-8 py-4 text-xl" onClick={handleStudents}>Students</button>
                 </div>
             </div>
 
