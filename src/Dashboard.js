@@ -16,6 +16,9 @@ const Dashboard = () => {
     const handleOffersClick = () => {
         navigate('/offers'); // Navigate to the new OffersPage
     };
+    const handleCompany= () => {
+        navigate('/AddCompany'); 
+    };
 
     return (
         <div>
@@ -38,7 +41,7 @@ const Dashboard = () => {
             {/* Additional Sections */}
             <div className="flex space-x-4 justify-center mt-5 w-full px-4">
                 <div className="w-full sm:w-1/2 md:w-1/3 text-white bg-blue-500 rounded py-3">
-                    <button className="w-full px-8 py-4 text-xl">Add Company</button>
+                    <button className="w-full px-8 py-4 text-xl" onClick={handleCompany}>Add Company</button>
                 </div>
                 <div className="w-full sm:w-1/2 md:w-1/3 text-white bg-blue-500 rounded py-3">
                     <button className="w-full px-8 py-4 text-xl">Add Offers</button>

@@ -7,7 +7,7 @@ import StudentDetails from './StudentDetails';
 import OffersPage from './OfferPage'; // Import the OffersPage component
 import TotalOffers from './TotalOffers'; // Component for displaying total offers
 import CompanyOffers from './CompanyOffers'; // Component for displaying company offers
-
+import AddCompany from './AddCompany';
 const App = () => {
   return (
     <div>
@@ -20,6 +20,7 @@ const App = () => {
           <Route path="/offers" element={<OffersPage />} /> {/* New Route for OffersPage */}
           <Route path="/totaloffers" element={<TotalOffers />} /> {/* Route for Total Offers */}
           <Route path="/companyoffers" element={<CompanyOffers />} />
+          <Route path="/AddCompany" element={<AddCompany />}/>
         </Routes>
       </Router>
     </div>
